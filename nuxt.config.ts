@@ -1,0 +1,18 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  compatibilityDate: '2024-04-03',
+  devtools: { enabled: true },
+  hooks: {
+    'pages:extend' (pages) {
+      pages.push({
+        name: 'Auth',
+        path: '/Auth',
+        file: '~/pages/Auth/Auth.vue'
+      })
+    }
+  },
+  css: [
+   '~/assets/css/styles.scss',
+   '~/assets/css/font/stylesheet.css'
+  ]
+})
