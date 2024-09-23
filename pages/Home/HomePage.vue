@@ -2,6 +2,7 @@
 
 import HomeBody from "~/pages/Home/Body/HomeBody.vue";
 import HomeHeader from "~/pages/Home/Body/Sections/HomeHeader.vue";
+import RunningLine from "~/pages/Home/RunningLine/RunningLine.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import HomeHeader from "~/pages/Home/Body/Sections/HomeHeader.vue";
     </div>
     <HomeHeader />
     <HomeBody />
+    <RunningLine/>
   </div>
 </template>
 
@@ -22,22 +24,26 @@ import HomeHeader from "~/pages/Home/Body/Sections/HomeHeader.vue";
 .main-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden; /* Чтобы избежать прокрутки */
 }
-
+@media (max-width: 768px) {
+  .main-container {
+    height: auto; /* Или другое значение, которое вам нужно */
+  }
+}
 .video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -1; /* Убедимся, что видео позади других элементов */
 }
 
 video {
   height: auto; /* Позволяет видео адаптироваться */
-  max-height: 100vh; /* Ограничение по высоте */
+  max-height: 100%; /* Ограничение по высоте */
   min-width: 100%; /* Убирает сжатие по ширине */
   object-fit: cover; /* Сохраняет пропорции */
   width: 100%;
@@ -48,20 +54,27 @@ video {
   top: 0;
   left: 0;
   width: clamp(20vw, 100vw, 100vw);
-  height: clamp(20%, 65vw, 56vw);
+  height: clamp(20%, 65vw, 57vw);
   background-color: rgba(3, 51, 157, 0.46); /* Правый фильтр */
   z-index: 1; /* Фильтр над видео */
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   video {
     height: auto; /* Позволяет видео адаптироваться */
     max-height: 100vh; /* Ограничение по высоте */
     min-width: 100%; /* Убирает сжатие по ширине */
     object-fit: cover; /* Сохраняет пропорции */
   }
+  .main-container {
+    height: auto; /* Или другое значение, которое вам нужно */
+  }
 }
-
+@media (max-width: 1890px) {
+  .main-container {
+    height: auto; /* Или другое значение, которое вам нужно */
+  }
+}
 @media (max-width: 768px) {
   video {
     height: auto; /* Позволяет видео адаптироваться */

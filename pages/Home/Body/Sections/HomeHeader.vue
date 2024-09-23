@@ -24,9 +24,19 @@ header {
   justify-content: space-between;
   padding: 10px 20px;
 }
+.main-logo {
+  background-color: #022469;
+  width: clamp(30px, 10vw, 130px);
+  height: clamp(30px, 10vw, 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+}
 .logo {
-  height: 70px;
-  width: 70px;
+  height: clamp(10px, 5vw, 70px);
+  width: clamp(10px, 5vw, 70px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,8 +45,8 @@ header {
 .logo-circle {
   position: absolute;
   z-index: 3;
-  height: 120px;
-  width: 120px;
+  height: clamp(30px, 10vw, 120px);
+  width: clamp(30px, 10vw, 120px);
   animation: spin 15s linear infinite; /* Используем 'linear' для равномерного вращения */
   display: flex;
   justify-content: center;
@@ -52,16 +62,7 @@ header {
   }
 }
 
-.main-logo {
-  background-color: #022469;
-  width: 130px;
-  height: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  z-index: 1;
-}
+
 .main-links {
   display: flex;
   justify-content: center;

@@ -5,9 +5,10 @@ import Greetings from "~/pages/Home/Body/Sections/Greetings.vue";
 </script>
 
 <template>
-  <Greetings/>
-  <MenuList/>
-
+  <div>
+    <Greetings/>
+    <MenuList/>
+  </div>
 </template>
 
 <style scoped>

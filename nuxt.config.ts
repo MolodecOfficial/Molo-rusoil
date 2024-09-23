@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       pages.push({
         name: 'Auth',
         path: '/Auth',
-        file: '~/pages/Auth/Auth.vue'
+        file: '~/pages/Home/Auth/Auth.vue'
       })
     }
   },

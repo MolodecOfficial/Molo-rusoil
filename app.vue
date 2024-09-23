@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 useHead( {
-  title: 'УГНТУ - Университет будущего'
+  title: 'УГНТУ — Университет будущего'
 })
 </script>
 
