@@ -7,7 +7,7 @@
     <h1>Личный кабинет</h1>
     <p>Добро пожаловать в ваш личный кабинет!</p>
   </div>
-  <a href="/">tytytyt</a>
+  <NuxtLink href="/">Вернуться на главную</NuxtLink>
 </template>
 <style scoped>
 

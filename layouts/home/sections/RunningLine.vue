@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
-import firstFrame from '~/public/Home/RunningLine/1.svg'
-import secondFrame from '~/public/Home/RunningLine/2.svg'
-import thirdFrame from '~/public/Home/RunningLine/3.svg'
-import fourthFrame from '~/public/Home/RunningLine/4.svg'
-import fiveFrame from '~/public/Home/RunningLine/5.svg'
+import firstFrame from 'public/home/sections/RunningLine/1.svg'
+import secondFrame from 'public/home/sections/RunningLine/2.svg'
+import thirdFrame from 'public/home/sections/RunningLine/3.svg'
+import fourthFrame from 'public/home/sections/RunningLine/4.svg'
+import fiveFrame from 'public/home/sections/RunningLine/5.svg'
 
 </script>
 

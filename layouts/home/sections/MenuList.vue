@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import forIncoming from 'public/Home/Body/MenuList/Incoming.png';
-import forStudents from 'public/Home/Body/MenuList/Student.png';
-import forScience from 'public/Home/Body/MenuList/Science.png';
-import forUniversity from 'public/Home/Body/MenuList/University.png';
-import forBusiness from 'public/Home/Body/MenuList/Business.png';
-import forPressRoom from 'public/Home/Body/MenuList/PressRoom.png';
+import forIncoming from 'public/home/sections/MenuList/Incoming.png';
+import forStudents from 'public/home/sections/MenuList/Student.png';
+import forScience from 'public/home/sections/MenuList/Science.png';
+import forUniversity from 'public/home/sections/MenuList/University.png';
+import forBusiness from 'public/home/sections/MenuList/Business.png';
+import forPressRoom from 'public/home/sections/MenuList/PressRoom.png';
 
 
 const icons = ref([ /* Массив с вкладками */
@@ -108,7 +108,7 @@ function hideLinks() {
     <div class="easy-list_overlay">
       <div class="easy-list_overlay_test"></div>
     </div>
-    <section id="tttt" class="easy-list_container">
+    <section class="easy-list_container">
       <a href="">Поступающим</a>
       <a href="">Обучающимся</a>
       <a href="">Выпускники УГНТУ</a>
@@ -126,14 +126,14 @@ function hideLinks() {
         class="nav-links"
         @mouseleave="hideLinks"
     >
-      <div
+      <section
           @mouseenter="showLinks(index)"
           class="nav-links_container-icon"
       >
         <a class="nav-links_main" :aria-expanded="activeIndex === index">
           <img v-show="typeof icon.icon === 'string'" :src="icon.icon" alt="Icon" />
         </a>
-        <div
+        <section
             v-show="activeIndex === index"
             class="nav-links_dropdown"
         >
@@ -145,8 +145,8 @@ function hideLinks() {
           >
             {{ link.text }}
           </a>
-        </div>
-      </div>
+        </section>
+      </section>
     </section>
   </section>
 

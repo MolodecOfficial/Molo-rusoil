@@ -5,12 +5,12 @@
 <template>
   <header>
     <a class="main-logo" href="">
-      <img class="logo" src="../../../../public/Home/logo.svg" alt="">
-      <img class="logo-circle" src="../../../../public/Home/logo-circle.svg" alt="">
+      <img class="logo" src="../../../public/home/logo.svg" alt="">
+      <img class="logo-circle" src="../../../public/home/logo-circle.svg" alt="">
     </a>
     <section class="main-links">
-      <NuxtLink class="link" to="/">Подать документы</NuxtLink>
-      <NuxtLink class="link" to="/Auth">Личный кабинет абитуриента</NuxtLink>
+      <NuxtLink class="link" to="">Подать документы</NuxtLink>
+      <NuxtLink class="link" to="/auth">Личный кабинет абитуриента</NuxtLink>
       <NuxtLink class="link" to="/">Списки поступающих</NuxtLink>
     </section>
   </header>
