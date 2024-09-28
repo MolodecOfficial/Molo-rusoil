@@ -6,8 +6,9 @@
   <div>
     <h1>Личный кабинет</h1>
     <p>Добро пожаловать в ваш личный кабинет!</p>
+    <b>Он тоже недоделан :Р</b>
   </div>
-  <NuxtLink href="/">Вернуться на главную</NuxtLink>
+  <NuxtLink href="/">Вернуться на главную</NuxtLink>  
 </template>
 <style scoped>
 
