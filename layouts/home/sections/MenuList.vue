@@ -14,75 +14,75 @@ const icons = ref([ /* Массив с вкладками */
     icon: forIncoming,
     header: { text: 'Поступающим' },
     links: [
-      { text: 'Приемная комиссия\n', href: '#' },
-      { text: 'Бакалавриат и специалитет', href: '#' },
-      { text: 'Аспирантура', href: '#' },
-      { text: 'Магистратура', href: '#' },
-      { text: 'СПО (Колледж)', href: '#' },
+      { text: 'Приемная комиссия', nuxtLink: 'in-progress' },
+      { text: 'Бакалавриат и специалитет', nuxtLink: 'in-progress' },
+      { text: 'Аспирантура',nuxtLink: 'in-progress' },
+      { text: 'Магистратура',nuxtLink: 'in-progress' },
+      { text: 'СПО (Колледж)', nuxtLink: 'in-progress' },
     ]
   },
   {
     icon: forStudents,
     header: { text: 'Обучающимся' },
     links: [
-      { text: 'Расписание', href: '#' },
-      { text: 'Личный кабинет', href: '#' },
-      { text: 'Факультеты, институты и кафедры', href: '#' },
-      { text: 'Документы УГНТУ',href: '#' },
-      { text: 'Обходной лист', href: '#' },
-      { text: 'Институт дополнительного профессионального образования', href: '#' },
-      { text: 'Стипендиальное обеспечение', href: '#' },
-      { text: 'Научно-исследовательская работа студентов', href: '#' },
-      { text: 'Цифровые кафедры',href: '#' }
+      { text: 'Расписание', nuxtLink: 'in-progress' },
+      { text: 'Личный кабинет', nuxtLink: 'in-progress' },
+      { text: 'Факультеты, институты и кафедры', nuxtLink: 'in-progress' },
+      { text: 'Документы УГНТУ', nuxtLink: 'in-progress' },
+      { text: 'Обходной лист', nuxtLink: 'in-progress' },
+      { text: 'Институт дополнительного профессионального образования', nuxtLink: 'in-progress' },
+      { text: 'Стипендиальное обеспечение',  nuxtLink: 'in-progress' },
+      { text: 'Научно-исследовательская работа студентов', nuxtLink: 'in-progress' },
+      { text: 'Цифровые кафедры', nuxtLink: 'in-progress' }
     ]
   },
   {
     icon: forScience,
     header: { text: 'Наука и исследования' },
     links: [
-      { text: 'Научные исследования', href: '#' },
-      { text: 'Орган по валидации и верификации парниковых газов УГНТУ\n', href: '#' },
-      { text: 'Основные научные направления', href: '#' },
-      { text: 'Научные конкурсы и гранты', href: '#' },
-      { text: 'Конференции и симпозиумы', href: '#' },
-      { text: 'Государственное задание в сфере научной деятельности', href: '#' },
-      { text: 'Научные центры и лаборатории УГНТУ', href: '#' },
-      { text: 'Отдел по работе с диссертационными советами', href: '#' }
+      { text: 'Научные исследования', nuxtLink: 'in-progress' },
+      { text: 'Орган по валидации и верификации парниковых газов УГНТУ\n', nuxtLink: 'in-progress' },
+      { text: 'Основные научные направления', nuxtLink: 'in-progress' },
+      { text: 'Научные конкурсы и гранты', nuxtLink: 'in-progress' },
+      { text: 'Конференции и симпозиумы', nuxtLink: 'in-progress' },
+      { text: 'Государственное задание в сфере научной деятельности', nuxtLink: 'in-progress' },
+      { text: 'Научные центры и лаборатории УГНТУ', nuxtLink: 'in-progress' },
+      { text: 'Отдел по работе с диссертационными советами', nuxtLink: 'in-progress' }
     ]
   },
   {
     icon: forBusiness,
     header: { text: 'Бизнесу' },
     links: [
-      { text: 'Производственная практика', href: '#' },
-      { text: 'Трудоустройство выпускников', href: '#' },
-      { text: 'Институт дополнительного профессионального образования', href: '#' },
-      { text: 'Проекты', href: '#' },
+      { text: 'Производственная практика', nuxtLink: 'in-progress' },
+      { text: 'Трудоустройство выпускников', nuxtLink: 'in-progress' },
+      { text: 'Институт дополнительного профессионального образования', nuxtLink: 'in-progress' },
+      { text: 'Проекты', nuxtLink: 'in-progress' },
     ]
   },
   {
     icon: forUniversity,
     header: { text: 'Об университете' },
     links: [
-      { text: 'Страница ректора', href: '#' },
-      { text: 'Фонд целевого капитала УГНТУ (эндаумент-фонд)',href: '#' },
-      { text: 'Документы УГНТУ', href: '#' },
-      { text: 'Факультеты, институты, школы', href: '#' },
-      { text: 'Образование', href: '#' },
-      { text: 'Программы обучения', href: '#' },
-      { text: 'Руководство университета', href: '#' },
-      { text: 'Управление университетом', href: '#' }
+      { text: 'Страница ректора', nuxtLink: 'in-progress' },
+      { text: 'Фонд целевого капитала УГНТУ (эндаумент-фонд)', nuxtLink: 'in-progress' },
+      { text: 'Документы УГНТУ', nuxtLink: 'in-progress' },
+      { text: 'Факультеты, институты, школы', nuxtLink: 'in-progress' },
+      { text: 'Образование', nuxtLink: 'in-progress' },
+      { text: 'Программы обучения', nuxtLink: 'in-progress' },
+      { text: 'Руководство университета', nuxtLink: 'in-progress' },
+      { text: 'Управление университетом', nuxtLink: 'in-progress' }
     ]
   },
   {
     icon: forPressRoom,
     header: { text: 'Пресс-Рум' },
     links: [
-      { text: 'Мероприятия', href: '#' },
-      { text: 'Новости', href: '#' },
-      { text: 'Объявления', href: '#' },
-      { text: 'СМИ о нас', href: '#' },
-      { text: 'Газета «За нефтяные кадры»', href: '#' },
+      { text: 'Мероприятия', nuxtLink: 'in-progress'},
+      { text: 'Новости', nuxtLink: 'in-progress' },
+      { text: 'Объявления', nuxtLink: 'in-progress' },
+      { text: 'СМИ о нас', nuxtLink: 'in-progress' },
+      { text: 'Газета «За нефтяные кадры»', nuxtLink: 'in-progress' },
     ]
   },
 ]);
@@ -109,14 +109,14 @@ function hideLinks() {
       <div class="easy-list_overlay_test"></div>
     </div>
     <section class="easy-list_container">
-      <a href="">Поступающим</a>
-      <a href="">Обучающимся</a>
-      <a href="">Выпускники УГНТУ</a>
-      <a href="">Наука и инновации</a>
-      <a href="">Бизнесу</a>
-      <a href="">Университет</a>
-      <a href="">Приоритет 2030</a>
-      <a href="">Вакансии УГНТУ</a>
+      <NuxtLink class="link" to="/in-progress">Поступающим</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Обучающимся</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Выпускники УГНТУ</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Наука и инновации</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Бизнесу</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Университет</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Приоритет 2030</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Вакансии УГНТУ</NuxtLink>
     </section>
   </section>
   <section class="nav-links-container">
@@ -138,13 +138,13 @@ function hideLinks() {
             class="nav-links_dropdown"
         >
           <p>{{ icon.header.text }}</p>
-          <a
+          <NuxtLink
               v-for="(link, linkIndex) in icon.links"
               :key="linkIndex"
-              :href="link.href"
+              :href="link.nuxtLink"
           >
             {{ link.text }}
-          </a>
+          </NuxtLink>
         </section>
       </section>
     </section>

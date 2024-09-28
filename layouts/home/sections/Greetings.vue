@@ -12,11 +12,11 @@
   </section>
   <section class="main_info">
     <section class="main_info_plates">
-      <a href="">Истории успеха</a>
-      <a href="">Есть идея?</a>
-      <a href="">Приёмная комиссия</a>
-      <a href="">Приоритет 2030</a>
-      <a href="">Кампусы</a>
+      <NuxtLink class="link" to="/in-progress">Истории успеха</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Есть идея?</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Приёмная комиссия</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Приоритет 2030</NuxtLink>
+      <NuxtLink class="link" to="/in-progress">Кампусы</NuxtLink>
     </section>
   </section>
 </template>
