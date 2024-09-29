@@ -53,7 +53,7 @@ h2:nth-child(3){
 .main_info {
   display: flex;
   justify-content: end;
-  margin-top: 40px;
+  margin-top: clamp(2px, 2vw, 40px);
   position: relative;
   align-items: flex-start;
 }

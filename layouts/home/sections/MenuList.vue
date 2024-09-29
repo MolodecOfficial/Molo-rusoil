@@ -202,25 +202,18 @@ function hideLinks() {
 
 @media (max-width: 700px) {
   .nav-links-container {
-    height: 100px;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    border: 1px solid red;
+    opacity: 0;
+    pointer-events: none;
   }
   .nav-links-container a {
-    height: 12px;
+    height: 24px;
   }
 }
 
 .nav-links-container {
   width: 10%;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-
+  position: relative;
 }
 
 .nav-links_container-icon {
