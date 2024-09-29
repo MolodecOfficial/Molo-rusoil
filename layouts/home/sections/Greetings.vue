@@ -22,6 +22,7 @@
 </template>
 
 <style scoped>
+
 .main_header {
   position: absolute;
   top: 0;
@@ -67,7 +68,7 @@ h2:nth-child(3){
 }
 .main_info a {
   width: 100%;
-  height: clamp(30px, 4vw, 70px);
+  height: clamp(10px, 4vw, 70px);
   font-size: clamp(6px, 1vw, 16px);
   border-top: 1px solid rgba(180, 180, 180, 0.27);
   border-left: 1px solid rgba(155, 155, 155, 0.27);

@@ -184,12 +184,12 @@ function hideLinks() {
   top: 0;
   left: 0;
   transform: translate(100%, 10%);
-  gap: 5px;
-  width: clamp(170px, 10vw, 200px);
+  gap: clamp(1px, 10vw, 5px);
+  width: clamp(80px, 10vw, 200px);
   flex-direction: column;
 }
 .easy-list_container a {
-  font-size: clamp(6px, 1vw, 20px);
+  font-size: clamp(2px, 1vw, 20px);
   color: #ffffff;
   transition: 0.2s transform ease-in-out, text-decoration-thickness 0.3s ease;
   text-decoration: none;
@@ -200,16 +200,34 @@ function hideLinks() {
   }
 }
 
+@media (max-width: 700px) {
+  .nav-links-container {
+    height: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border: 1px solid red;
+  }
+  .nav-links-container a {
+    height: 12px;
+  }
+}
+
 .nav-links-container {
   width: 10%;
   z-index: 1;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
 }
 
 .nav-links_container-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .nav-links_container-icon:hover {
   cursor: pointer;
@@ -232,6 +250,7 @@ function hideLinks() {
   text-decoration: none;
   color: #333; /* Цвет текста */
   transition: color 0.3s ease;
+
 }
 
 .nav-links_main:hover {

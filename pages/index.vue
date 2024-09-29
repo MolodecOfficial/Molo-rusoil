@@ -3,6 +3,7 @@
 import RunningLine from "~/layouts/home/sections/RunningLine.vue";
 import HomeBody from "~/layouts/home/sections/HomeBody.vue";
 import HomeHeader from "~/layouts/home/sections/HomeHeader.vue";
+import News from "~/layouts/home/sections/News.vue";
 </script>
 
 <template>
@@ -17,6 +18,9 @@ import HomeHeader from "~/layouts/home/sections/HomeHeader.vue";
     <HomeHeader />
     <HomeBody />
     <RunningLine/>
+  </div>
+  <div>
+    <News/>
   </div>
 </template>
 

@@ -8,7 +8,6 @@ import Greetings from '~/layouts/home/sections/Greetings.vue';
 <template>
   <Greetings/>
   <MenuList/>
-
 </template>
 
 <style scoped>
