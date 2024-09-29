@@ -10,6 +10,7 @@ import catkiss from 'public/in-progress/kiss.gif'
     <h2>
       Сайт по прежнему в разработке, оставайтесь на связи!
     </h2>
+    
     <img :src="catkiss" alt="">
   </section>
 </template>
