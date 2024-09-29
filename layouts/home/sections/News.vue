@@ -109,6 +109,11 @@ button {
   width: 150px;
   border-radius: 50px;
   font-size: 17px;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    background-color: #456ab7;
+    cursor: pointer;
+  }
 }
 .showMore {
   display: flex;
