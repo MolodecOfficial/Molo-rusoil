@@ -206,7 +206,6 @@ function hideLinks() {
     display: flex;
     align-items: start;
     justify-content: start;
-    border: 1px solid red;
   }
   .nav-links-container a {
     height: 12px;
