@@ -69,6 +69,8 @@ header {
   align-items: start;
   flex-direction: column;
   gap: 6px;
+  position: relative;
+  z-index: 1;
 }
 .link {
   color: #eee;
@@ -77,6 +79,7 @@ header {
   margin: 0 15px;
   transition: 0.2s transform ease-in-out, text-decoration-thickness 0.3s ease;
   text-decoration: none;
+
   &:hover {
     text-decoration: underline 1px;
   }
