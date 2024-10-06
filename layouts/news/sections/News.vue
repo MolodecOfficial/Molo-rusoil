@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import MoloNews from "~/layouts/home/UI/MoloNews.vue";
+import MoloNews from "~/layouts/news/UI/MoloNews.vue";
 
 
 
@@ -53,8 +53,6 @@ let MoloNewsArray: Array<MoloNew> = [
   }
 ]
 
-const showMore = ref(false);
-const displayedNews = computed(() => showMore.value ? MoloNewsArray : MoloNewsArray.slice(0, 4));
 </script>
 
 <template>
@@ -63,16 +61,16 @@ const displayedNews = computed(() => showMore.value ? MoloNewsArray : MoloNewsAr
       <p>Новости Университета</p>
     </header>
     <section>
-      <div v-for="(news, idx) in displayedNews" :key="idx">
+      <div v-for="(news, idx) in MoloNewsArray" :key="idx">
         <MoloNews
             :image="news.image"
             :description="news.description"
             :link="news.link"
         />
       </div>
-      <section class="showMore">
-        <button v-if="!showMore" @click="showMore = true">Показать ещё</button>
-      </section>
+    </section>
+    <section class="showMore">
+      <NuxtLink class="showMore_btn" to="/in-progress">Показать ещё</NuxtLink>
     </section>
   </div>
 </template>
@@ -118,6 +116,24 @@ button {
 .showMore {
   display: flex;
   justify-content: center;
-  height: 15%;
+  width: 100%;
+  padding: 15px 10px;
+   & .showMore_btn {
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 140px;
+     background-color: #123e98;
+     color: #e3e3e3;
+     border-radius: 15px;
+     text-decoration: none;
+     transition: 0.15s all ease-in-out;
+     &:hover {
+       text-decoration: underline 1px;
+       text-underline-offset: 4px;
+       background-color: #102f73;
+     }
+   }
 }
 </style>
